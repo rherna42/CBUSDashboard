@@ -242,7 +242,7 @@ margin-bottom: 20px;
 
 <script>
 let allData = [];
-let currentDept = 'CLAS';
+let currentDept = 'CBUS';
 let trendChart = null;
 
 const metricGroups = {
@@ -668,7 +668,7 @@ const springYear = fallYear + 1;
 const fallTerm = `Fall ${fallYear}`;
 const springTerm = `Spring ${springYear}`;
 
-// Check if both Fall and Spring have data (excluding CLAS aggregate)
+// Check if both Fall and Spring have data (excluding CBUS aggregate)
 const hasFallData = allData.some(d =>
 d.Metric === 'CHP' &&
 d['Year/Term'] === fallTerm &&
@@ -747,7 +747,7 @@ const springTerm = `Spring ${springYear}`;
 const fallData = allData.filter(d =>
 d.Metric === 'CHP' &&
 d['Year/Term'] === fallTerm &&
-d.Department !== 'CBUS' && // Exclude the aggregate CLAS row to avoid double-counting
+d.Department !== 'CBUS' && // Exclude the aggregate CBUS row to avoid double-counting
 d.Value !== null &&
 d.Value !== undefined &&
 d.Value !== ''
@@ -756,7 +756,7 @@ d.Value !== ''
 const springData = allData.filter(d =>
 d.Metric === 'CHP' &&
 d['Year/Term'] === springTerm &&
-d.Department !== 'CBUS' && // Exclude the aggregate CLAS row to avoid double-counting
+d.Department !== 'CBUS' && // Exclude the aggregate CBUS row to avoid double-counting
 d.Value !== null &&
 d.Value !== undefined &&
 d.Value !== ''
@@ -776,7 +776,7 @@ updateTermTable();
 function updateYearTable() {
 console.log('=== updateYearTable called ===');
 console.log('currentDept:', currentDept);
-console.log('currentDept === "CBUS":', currentDept === 'CLAS');
+console.log('currentDept === "CBUS":', currentDept === 'CBUS');
 
 // Get all academic years (YYYY-YYYY format) and sort in reverse
 const years = [...new Set(allData
@@ -804,7 +804,7 @@ let hasCHPData;
 if (currentDept === 'CBUS') {
 // For CBUS, check if ANY department has Fall/Spring CHP data (we'll sum them)
 hasCHPData = allData.some(d =>
-d.Department !== 'CLAS' &&
+d.Department !== 'CBUS' &&
 d.Metric === 'CHP' &&
 (d['Year/Term'].includes('Fall') || d['Year/Term'].includes('Spring'))
 );
@@ -824,7 +824,7 @@ if (hasCHPData && !metrics.includes('CHP')) {
 metrics.push('CHP');
 metrics.sort();
 if (currentDept === 'CBUS') {
-console.log('CLAS - Added CHP to metrics. New metrics:', metrics);
+console.log('CBUS - Added CHP to metrics. New metrics:', metrics);
 }
 }
 
@@ -1306,7 +1306,7 @@ position: 'top'
 },
 title: {
 display: true,
-text: `CHP - ${currentDept === 'CLAS' ? 'All Departments' : currentDept}`,
+text: `CHP - ${currentDept === 'CBUS' ? 'All Departments' : currentDept}`,
 font: {
 size: 16,
 weight: 'bold'

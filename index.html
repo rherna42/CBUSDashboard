@@ -853,7 +853,7 @@ const cell = document.createElement('td');
 if (currentDept === 'CBUS) {
 // For CBUS, sum all departments' CHP for this academic year
 const total = calculateAcademicYearCHP(fallYear, springYear);
-console.log(`CLAS - ${year}: CHP total =`, total);
+console.log(`CBUS - ${year}: CHP total =`, total);
 if (total > 0) {
 cell.textContent = formatValue(metric, total);
 hasYearCHPData = true;

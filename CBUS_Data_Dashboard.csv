@@ -9,7 +9,6 @@
  CIS,Spring 2023,Avg_Class_Size,23.88
  CIS,Spring 2024,Avg_Class_Size,26.52
  CIS,Spring 2025,Avg_Class_Size,27.424
- CIS,Spring 2026,Avg_Class_Size,
  CIS,Fall 2021,CHP,1895
  CIS,Fall 2022,CHP,1941
  CIS,Fall 2023,CHP,2042
@@ -31,7 +30,6 @@ ACC,Spring 2022,Avg_Class_Size,22.8837
 ACC,Spring 2023,Avg_Class_Size,24.6
 ACC,Spring 2024,Avg_Class_Size,24.615
 ACC,Spring 2025,Avg_Class_Size,27.282
-ACC,Spring 2026,Avg_Class_Size,
 ACC,Fall 2021,CHP,1051
 ACC,Fall 2022,CHP,931
 ACC,Fall 2023,CHP,1024
@@ -109,7 +107,6 @@ ECO,Spring 2022,Avg_Class_Size,24.46
 ECO,Spring 2023,Avg_Class_Size,30.375
 ECO,Spring 2024,Avg_Class_Size,31.666667
 ECO,Spring 2025,Avg_Class_Size,31.818181
-ECO,Spring 2026,Avg_Class_Size,
 ECO,Fall 2021,CHP,682
 ECO,Fall 2022,CHP,602
 ECO,Fall 2023,CHP,1107
@@ -159,7 +156,6 @@ FIN,Spring 2022,Avg_Class_Size,23.645
 FIN,Spring 2023,Avg_Class_Size,22.172
 FIN,Spring 2024,Avg_Class_Size,21.5862
 FIN,Spring 2025,Avg_Class_Size,25.060606
-FIN,Spring 2026,Avg_Class_Size,
 FIN,Fall 2021,CHP,817
 FIN,Fall 2022,CHP,697
 FIN,Fall 2023,CHP,691
@@ -209,7 +205,6 @@ MGT,Spring 2022,Avg_Class_Size,23.88
 MGT,Spring 2023,Avg_Class_Size,24.38
 MGT,Spring 2024,Avg_Class_Size,25.03
 MGT,Spring 2025,Avg_Class_Size,25.56
-MGT,Spring 2026,Avg_Class_Size,
 MGT,Fall 2021,CHP,1757
 MGT,Fall 2022,CHP,1563
 MGT,Fall 2023,CHP,1409
@@ -259,7 +254,6 @@ MKT,Spring 2022,Avg_Class_Size,25.05
 MKT,Spring 2023,Avg_Class_Size,24.58
 MKT,Spring 2024,Avg_Class_Size,26.3506
 MKT,Spring 2025,Avg_Class_Size,28.6575
-MKT,Spring 2026,Avg_Class_Size,
 MKT,Fall 2021,CHP,2251
 MKT,Fall 2022,CHP,2226
 MKT,Fall 2023,CHP,2251
